@@ -1,0 +1,25 @@
+<div class="container py-5">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Employee Id</th>
+        <th scope="col">First name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Birth Date</th>
+        <th scope="col">Hire Date</th>
+        <th scope="col">Gender</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of employees">
+        <th> {{ employee.emp_no }} </th>
+        <td>{{ employee.first_name }}</td>
+        <td>{{ employee.last_name }}</td>
+        <td>{{ employee.birth_date | date }}</td>
+        <td>{{ employee.hire_date | date }}</td>
+        <td>{{ employee.gender }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
